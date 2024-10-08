@@ -62,6 +62,7 @@
     left: 55%;
     top: 18%;
     /*background-color: orange;*/
+    z-index: 2;
 }
 
 .header-main__logo {
@@ -77,7 +78,8 @@
 
 .header-main__title {
     width: 100%;
-    height: auto;
+    /*height: auto;*/
+    overflow: hidden;
 }
 
 .header-main__kv {
@@ -169,6 +171,10 @@
     text-align: center;
 }
 
+.header-view__bg {
+    display: none;
+}
+
 /*内容*/
 .content {
     width: 100%;
@@ -185,11 +191,11 @@
 }
 
 .nav-main {
-    width: 78%;
+    width: 80%;
     margin: 0 auto;
     background-image: url("../img/guarantee-bg-pc.DAjV3GXa.png");
-    /*background-repeat: no-repeat;*/
-    /*background-size: 100% 100%;*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .nav-item {
@@ -198,6 +204,10 @@
     position: relative;
     text-align: center;
 
+}
+
+.style-none {
+    display: none;
 }
 
 .nav-item__img--dw {
@@ -210,7 +220,12 @@
     color: yellow;
     position: absolute;
     top: 40%;
-    left: 28%;
+    left: 26%;
+}
+
+.nav-view__text {
+    position: absolute;
+    left: 80px;
 }
 
 #nav-item__logo {
@@ -260,6 +275,14 @@
 
 .main-card__img {
     width: 30%;
+}
+
+.content-main__item--none {
+    display: none;
+}
+
+.content-main__item--none2 {
+    display: none;
 }
 
 .content-main__item1 {
@@ -370,6 +393,18 @@
     padding: 20px 0 0 40px;
 }
 
+.view-main__bg {
+    display: none;
+}
+
+.view-buy {
+    display: none;
+}
+
+.view-give {
+    display: none;
+}
+
 /*数字豪华版详情*/
 .content-banner {
     width: 100%;
@@ -400,6 +435,10 @@
     background-color: gray;
     position: absolute;
     z-index: 10000;
+}
+
+.view-num__banner {
+    display: none;
 }
 
 .video-header-img {
@@ -461,13 +500,23 @@
     text-align: center;
 }
 
+.footer-view__banner {
+    display: none;
+}
+
+.footer-view__banner--jin {
+    display: none;
+}
+
 .footer-banner__main--dw {
     width: 60%;
     height: auto;
     position: absolute;
     top: 75px;
 }
-
+.footer-view__banner__text{
+    display: none;
+}
 .banner-main__wk {
     width: 30%;
 }
@@ -488,7 +537,9 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-
+.footer-view__banner--jin2{
+    display: none;
+}
 .footer-banner__main--btn p {
     width: 100%;
     /*height: 50px;*/
@@ -553,16 +604,19 @@
     /*padding-top: 40px;*/
     /*background-color: white;*/
 }
-.footer-btn__bg{
+
+.footer-btn__bg {
     width: 100%;
     position: absolute;
     top: -80px;
     opacity: 0.4;
 }
-.footer-btn__bg img{
+
+.footer-btn__bg img {
     width: 100%;
 }
-.footer-btn__desc p{
+
+.footer-btn__desc p {
     font-size: 12px;
     padding-bottom: 6px;
 }
